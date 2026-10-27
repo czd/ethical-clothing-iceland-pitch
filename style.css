@@ -57,3 +57,24 @@ body.reader .display-tag b{font-size:21px;line-height:1.15}
 body.reader .display-proof{position:static;inset:auto;width:100%;font-size:24px;line-height:1.45;padding:16px 0 0;margin:0;border-top:1px solid #7d8873}
 
 body.reader .display-proof br{display:initial}
+
+/* Reader is a native touch-scroll document, not a Reveal gesture surface. */
+html.reader-root{height:auto;min-height:100%;overflow:visible;touch-action:auto}
+body.reader{height:auto;overflow:visible;touch-action:auto;padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+body.reader .reveal{touch-action:pan-y pinch-zoom;overflow:visible}
+body.reader .reveal .slides{pointer-events:auto;touch-action:pan-y pinch-zoom}
+body.reader .reveal .slides>section{overflow:visible;scroll-margin-top:68px}
+.reader-nav{display:none}
+body.reader .reader-nav{position:fixed;z-index:25;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 16px calc(6px + env(safe-area-inset-bottom,0px));background:var(--paper);border-top:1px solid var(--line);font-size:13px}
+.reader-nav a{display:flex;align-items:center;min-height:44px;padding:0 8px;text-decoration:none;font-weight:600}
+.reader-nav a[aria-disabled="true"]{color:var(--muted);pointer-events:none}
+.reader-nav span{font-size:12px;text-align:center}
+.utility button,.utility a{min-height:44px;display:inline-flex;align-items:center}
+body.reader .roundel{position:relative;inset:auto;transform:none;margin:20px 0 10px auto;width:max-content;min-width:90px;height:auto;min-height:90px;aspect-ratio:1;padding:16px;font-size:13px;flex-shrink:0}
+body.reader .hero-shirt{position:relative;inset:auto;margin:20px auto 0;width:min(100%,600px)}
+body.reader .hero-label{position:static;text-align:center}
+body.reader .product-photo{height:auto;min-height:300px;padding-bottom:16px}
+body.reader .product-photo>.micro{position:static;display:block;margin:0 20px;line-height:1.5}
+body.reader .slide-top{align-items:flex-start}
+body.reader .reveal .slides>section{overflow-wrap:break-word}
+@media(max-width:1100px){body.reader .thread{position:static;inset:auto;margin-top:18px}body.reader .reveal h1,body.reader .reveal h2{margin-top:28px}body.reader .hero-shirt{height:340px}body.reader .utility{padding:0 12px}.utility div{gap:12px}}
