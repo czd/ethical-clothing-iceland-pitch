@@ -1,0 +1,106 @@
+{
+  "voice": "ElevenLabs River \u2014 Relaxed, Neutral, Informative",
+  "voiceId": "SAz9YHcvj6GT2YYXdXww",
+  "model": "eleven_multilingual_v2",
+  "slides": [
+    {
+      "id": "possibility",
+      "title": "Good clothes. Nothing to hide.",
+      "text": "Imagine walking past a small display. The colours catch your eye. You touch the fabric, hold up a shirt, and think: yes, I would wear that. Then you notice the tag. Not a vague promise about saving the world, but a simple invitation: follow this shirt. Where it began, who made it, what we know, and what we still need to find out. That is the idea here. Desirable everyday clothing for Iceland, with a clearer story and a price that makes sense. This is a business concept, not verified stock. The invitation is to see whether good retail and honest evidence can make each other stronger.",
+      "audio": "audio/01-possibility.mp3",
+      "durationSeconds": 37.851429
+    },
+    {
+      "id": "choice",
+      "title": "Choosing well shouldn\u2019t be hard work.",
+      "text": "Most customers are not coming into a shop to conduct a supply-chain investigation. They want something that fits their body, their life, and their budget. So the garment has to earn attention before the explanation does. Our working hypothesis is that three answers should be easy to find: will it fit, what will I really pay, and what sits behind the label? Clear measurements. A visible delivered price. Evidence in plain language. We have not established that this is what Icelandic shoppers want from this particular offer. That is a question for the test, not a conclusion for the poster.",
+      "audio": "audio/02-choice.mp3",
+      "durationSeconds": 34.037551
+    },
+    {
+      "id": "iceland",
+      "title": "A small market. A clear place to start.",
+      "text": "Iceland gives this idea a focused setting. Statistics Iceland reported three hundred and ninety-four thousand, three hundred and twenty-four residents at the start of twenty twenty-six. That is a population figure, not a customer forecast. The practical proposal is much narrower: start around Reykjavik, learn face to face, and support the experience online. You can watch someone assess the fit, hear the question they cannot find an answer to, and understand what makes them hesitate. The ambition is not to announce Iceland's first ethical shop. It is to build one useful, credible offer, then find out whether enough people actually choose it.",
+      "audio": "audio/03-iceland.mp3",
+      "durationSeconds": 39.836735
+    },
+    {
+      "id": "shirt",
+      "title": "A garment. Not a green adjective.",
+      "text": "Follow one shirt, and the story becomes more concrete. Start with the fibre. Then the spinning, knitting and dyeing. Then the sewing site, and the evidence about pay. Finally, the journey to Iceland, and the life of the garment after purchase. Each step is a question to answer, not a badge to award ourselves. An invoice is not a payslip. A material certificate does not prove that every worker earns a living wage. Fair treatment means taking workers and their evidence seriously, not casting the retailer as a rescuer. For this concept, the supply route is not established. A real product would need a real, carefully bounded record.",
+      "audio": "audio/04-shirt.mp3",
+      "durationSeconds": 43.72898
+    },
+    {
+      "id": "precedents",
+      "title": "Borrow the clarity. Build the local experience.",
+      "text": "There are useful precedents, without pretending they are ready-made suppliers. At the research snapshot, Yes Friends listed an original tee at twelve to fourteen pounds and described a contribution towards a living wage. That is the company's description of its mechanism, not independent proof of full wage coverage. Honest Basics listed a basic tee at fourteen euros ninety and declared a blend of organic and recycled cotton. Again, a brand declaration is not a batch certificate. What we can borrow is the clarity: a simple product and an understandable explanation. We cannot import a foreign consumer price and assume it becomes a viable delivered price in Iceland.",
+      "audio": "audio/05-precedents.mp3",
+      "durationSeconds": 41.404082
+    },
+    {
+      "id": "merchandising",
+      "title": "Make the evidence part of the display.",
+      "text": "This is where visual merchandising can do real work. Picture one hero garment, a small, deliberate colour story, room to touch the fabric, and a tag you can actually read. The front helps you choose: product, fit and price. The reverse opens the evidence. Not a wall of worthy text, and not a halo around an ordinary shirt. The display should make curiosity feel natural. These colours, garments and labels are concepts, not available stock. We are not claiming that the display increases sales. We are proposing a retail treatment worth testing, with the same care we would give to lighting, spacing and the size curve.",
+      "audio": "audio/06-merchandising.mp3",
+      "durationSeconds": 38.269388
+    },
+    {
+      "id": "shopping",
+      "title": "Twenty seconds to choose. Depth when you want it.",
+      "text": "Online, keep that same hierarchy. First the garment. Then the fit, available sizes, delivery and returns. The evidence should be easy to open, but nobody should have to read a report to discover the total price. In this illustration, the shirt is four thousand nine hundred and ninety Icelandic kronur, with nine hundred and ninety for delivery. The total is five thousand nine hundred and eighty, including value added tax. Where the sewing site or wage outcome is unknown, say so where the customer can see it. This is a proposed product page, not a checkout. A real shop would also need reviewed Icelandic copy and lawful terms.",
+      "audio": "audio/07-shopping.mp3",
+      "durationSeconds": 38.112653
+    },
+    {
+      "id": "experiment",
+      "title": "Does better presentation earn its space?",
+      "text": "A beautiful display still has to earn its place in the business. Compare an ordinary product-and-price presentation with the same product and price, plus the follow-the-shirt story. Keep stock, channel and traffic as comparable as possible. Then look beyond clicks. Do more eligible visitors buy? What do they keep? What comes back? And what contribution remains after variable costs? Wait through the returns window before calling the result. A small pilot may give directional learning rather than a statistically decisive winner. The useful outcome is not applause for the idea. It is evidence about whether this presentation helps create kept sales at a workable cost.",
+      "audio": "audio/08-experiment.mp3",
+      "durationSeconds": 40.124082
+    },
+    {
+      "id": "price",
+      "title": "No surprise at the last click.",
+      "text": "Now put yourself at the final click. Four thousand nine hundred and ninety for the item, plus nine hundred and ninety delivery, makes five thousand nine hundred and eighty Icelandic kronur. That is the price the customer experiences, not just the attractive number on the rail. Showing it early is part of the proposition. But this is still an illustrative price point. We do not yet have a supplier quote demonstrating that the product, evidence and service can all be delivered at that price. The next chart asks a harder question: even if the customer accepts the total, what remains to operate the business?",
+      "audio": "audio/09-price.mp3",
+      "durationSeconds": 37.146122
+    },
+    {
+      "id": "economics",
+      "title": "Contribution. Not profit.",
+      "text": "Read this chart as money moving through one retained order. From the customer payment, remove output value added tax. Then account for the landed garment, dispatch and payment fees, the expected cost of returns, and an allowance for acquiring the customer. What remains is nine hundred and eighty point two zero Icelandic kronur. Contribution, not profit. Fixed pay, rent, systems, verification and finance still need funding. The calculation assumes a hypothetical five-hundred-unit consolidated batch and several unmeasured costs and behaviours. It is not a quote for the smaller pilot. The value of the waterfall is that it makes the assumptions discussable. Change them, and the amount left changes too.",
+      "audio": "audio/10-economics.mp3",
+      "durationSeconds": 45.322449
+    },
+    {
+      "id": "delivery",
+      "title": "Free delivery uses real margin.",
+      "text": "The delivery chart makes that sensitivity visible. With the illustrative delivery charge, contribution is nine hundred and eighty point two zero kronur. Remove the charge while still paying the carrier, and it falls to two hundred and ten point nine three. Local pickup, with no delivery charge and no carrier cost, gives one thousand two hundred and sixty-nine point seven five. These bars use the same scale, so the difference is meaningful. Pickup is not free to operate: premises and staff still need funding. And useful multi-item baskets are something to investigate, not an assumed rescue. The lesson is simple: a generous-looking offer can consume the money that makes the service possible.",
+      "audio": "audio/11-delivery.mp3",
+      "durationSeconds": 39.732245
+    },
+    {
+      "id": "pilot",
+      "title": "One product. A capped experiment.",
+      "text": "So start small enough to learn, and small enough to stop. The proposal is at most one hundred units of one tee, in one or two colours, with a deliberate size curve. Buy new existing stock wholesale rather than commissioning a private-label run. Before buying, approve the evidence, sample fit, actual landed quote, and a numeric cash and loss cap. Then consider a six-week selling test, followed by reconciliation after returns mature. Unsold stock counts too. One hundred is a ceiling to discuss, not an order or an approved budget. And the small batch may cost more per unit than the five-hundred-unit example. Reorder, revise or stop on actual results.",
+      "audio": "audio/12-pilot.mp3",
+      "durationSeconds": 41.743673
+    },
+    {
+      "id": "collaboration",
+      "title": "Two crafts. One customer experience.",
+      "text": "The interesting partnership is between two crafts. Retail judgement turns a garment into an experience: range, fit, buying discipline, presentation and human service. Technology can make that work easier to run: simple commerce, readable evidence, inventory visibility and useful measurement. Neither side replaces the other. A dashboard cannot tell you how the fabric feels, and a beautiful rail cannot reconcile the cost of returns by itself. The proposal is to design the test together, with responsibilities and decisions made explicitly. No titles, workloads or commercial terms are agreed here. Start with the customer experience you both want to create, then decide how to share the work.",
+      "audio": "audio/13-collaboration.mp3",
+      "durationSeconds": 45.270204
+    },
+    {
+      "id": "invitation",
+      "title": "The next conversation.",
+      "text": "Come back to that first moment at the display. A shirt someone wants to wear. Answers they can understand. A total price they can judge. And underneath it, a business honest enough to show its workings. Could we make that one of the easiest good choices in someone's wardrobe? The next conversation does not need a grand launch plan. Choose a customer. Sketch the first display. Decide what garment and what evidence would be good enough. Then see whether the real numbers deserve a capped pilot. That is the invitation: bring retail instinct and technical leverage to the same table, and make the next decision together.",
+      "audio": "audio/14-invitation.mp3",
+      "durationSeconds": 36.858776
+    }
+  ],
+  "durationSeconds": 559.438369
+}
