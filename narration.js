@@ -45,7 +45,7 @@
   dock.addEventListener('keydown', e => e.stopPropagation());
   document.querySelector('#mode').addEventListener('click', () => audio.pause(), {capture:true});
   addEventListener('pagehide', () => audio.pause());
-  fetch('narration.json?v=20261027-river1').then(r => {if(!r.ok) throw Error();return r.json();}).then(data => {
+  fetch('narration.json?v=20261027-ml2').then(r => {if(!r.ok) throw Error();return r.json();}).then(data => {
     slides = data.slides;
     slides.forEach((s,i) => {const o = document.createElement('option'); o.value=i;o.textContent=`${i+1} / ${slides.length} · ${s.title}`;select.append(o);});
     select.disabled = false;

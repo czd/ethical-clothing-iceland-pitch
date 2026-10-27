@@ -1,15 +1,12 @@
-# Good clothes. Nothing to hide.
+# One trusted online store
 
-A 14-slide discussion pitch for an evidence-led clothing retailer in Iceland.
+14-slide public discussion pitch for a branded multi-label webshop in Iceland. Our brand is the online store; selected existing clothing labels keep their names. Product sales, not a referral-only directory. No supplier agreement, stock commitment or fulfilment route is confirmed. Own-label clothing is an optional later possibility.
 
-- Open `index.html` via a static web server, or use the published GitHub Pages site.
-- Arrows / space advance slides and chart builds. Escape or Overview shows all slides.
-- Small screens use a readable vertical layout automatically. The view switch is always available.
-- Reduced-motion preferences are respected. There is no autoplay audio, tracking, checkout or data collection.
-- `sources.html` contains dated sources, full model inputs and proposed pilot gates.
+- Open `index.html` via a static server or the published Pages site.
+- Arrows/space advance slides and builds; Escape opens overview.
+- Small screens default to native vertical reading. Switch modes without losing your slide.
+- Optional AI narration: ElevenLabs River, with native playback/seek controls and no autoplay or automatic advance. Changing slides pauses audio. `transcript.html` and `narration.json` contain exact script/audio mapping.
+- `sources.html` records dated brand declarations, gaps, commercial options and pilot gates. Named brands and generic illustrations are research/design examples, not available stock or approved supplier relationships.
+- No checkout, customer data collection or analytics. Commercial/legal/service gates must pass before orders. No numerical margin forecast or demand claim.
 
-This is a vision and a test proposal—not a supplier offer, verified garment, demand forecast or business launch. Prices and economic model outputs are illustrative where labelled. Research snapshot: 27 October 2026.
-
-## Assets
-
-Reveal.js 5.2.1 is vendored under its MIT license (`vendor/reveal-LICENSE`). DM Sans and Instrument Serif are vendored under their SIL Open Font Licenses (`vendor/*OFL.txt`). Original garment/display illustrations are concepts, not verified stock. No external runtime assets are required.
+Edition: 27 October 2026. Reveal.js 5.2.1 (MIT), DM Sans and Instrument Serif (SIL OFL) are vendored with licences. No external runtime assets. Chromium QA is not physical Safari certification.
