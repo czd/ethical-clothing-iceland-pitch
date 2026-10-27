@@ -5,6 +5,28 @@
   const status = document.querySelector('#audio-status');
   const transcript = document.querySelector('#audio-transcript');
   const sections = [...document.querySelectorAll('.slides > section')];
+  const toggle = document.querySelector('#audio-toggle');
+  const seek = document.querySelector('#audio-seek');
+  const more = document.querySelector('#audio-more');
+  const options = document.querySelector('#audio-options');
+  const clock = seconds => { const n = Number.isFinite(seconds) ? Math.floor(seconds) : 0; return `${Math.floor(n / 60)}:${String(n % 60).padStart(2, '0')}`; };
+  const update = () => {
+    toggle.textContent = audio.paused ? 'Play' : 'Pause';
+    toggle.setAttribute('aria-label', audio.paused ? 'Play narration' : 'Pause narration');
+    const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+    seek.disabled = !duration;
+    seek.max = String(duration || 100);
+    seek.value = String(audio.currentTime || 0);
+    seek.setAttribute('aria-valuetext', `${clock(audio.currentTime)} of ${clock(duration)}`);
+    document.querySelector('#audio-time').textContent = `${clock(audio.currentTime)} / ${clock(duration)}`;
+  };
+  const play = () => audio.play().catch(() => { status.textContent = 'Playback could not start. Read the transcript or try downloading the MP3 there.'; });
+  toggle.addEventListener('click', () => audio.paused ? play() : audio.pause());
+  seek.addEventListener('input', () => { if (Number.isFinite(audio.duration)) audio.currentTime = Number(seek.value); update(); });
+  more.addEventListener('click', () => { const open = more.getAttribute('aria-expanded') !== 'true'; more.setAttribute('aria-expanded', String(open)); options.hidden = !open; });
+  document.querySelector('#audio-hide').addEventListener('click', () => { audio.pause(); dock.open = false; dock.querySelector('summary').focus(); });
+  for (const event of ['play', 'pause', 'ended', 'timeupdate', 'durationchange', 'loadedmetadata', 'emptied', 'error']) audio.addEventListener(event, update);
+  new MutationObserver(() => { document.querySelector('#compact-status').textContent = status.textContent; }).observe(status, {childList:true});
   let slides = [], current = -1;
   new ResizeObserver(() => {
     document.documentElement.style.setProperty('--narration-height', `${dock.getBoundingClientRect().height}px`);
@@ -18,6 +40,8 @@
     audio.pause(); current = index;
     audio.src = slides[index].audio; audio.load();
     select.value = String(index);
+    document.querySelector('#audio-title').textContent = `${index + 1} / ${slides.length} · ${slides[index].title}`;
+    update();
     audio.setAttribute('aria-label', `Slide ${index + 1}: ${slides[index].title}`);
     transcript.href = `transcript.html#${slides[index].id}`;
     status.textContent = `Slide ${index + 1} of ${slides.length}. Press Play to listen.`;
@@ -50,6 +74,10 @@
     slides.forEach((s,i) => {const o = document.createElement('option'); o.value=i;o.textContent=`${i+1} / ${slides.length} · ${s.title}`;select.append(o);});
     select.disabled = false;
     document.querySelector('#audio-replay').disabled = false;
+    options.hidden = true;
+    dock.classList.add('enhanced');
+    audio.controls = false;
+    toggle.disabled = false;
     sync();
   }).catch(() => {status.textContent='Narration list unavailable. The transcript includes all audio download links.';});
 })();
