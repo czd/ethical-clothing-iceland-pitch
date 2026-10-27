@@ -5,8 +5,11 @@
   const mode = document.querySelector('#mode');
   const sections = [...document.querySelectorAll('.slides > section')];
   mode.textContent = reader ? 'Slide view' : 'Read / mobile view';
+  const readerSlide = () => sections.find(s => s.getBoundingClientRect().top <= 60 && s.getBoundingClientRect().bottom > 60)?.id || 'possibility';
+  // Snapshot before native button focus can scroll the document on mobile.
+  mode.addEventListener('pointerdown', () => { if (reader) mode.dataset.slide = readerSlide(); });
   mode.addEventListener('click', () => {
-    const id = reader ? (sections.find(s => s.getBoundingClientRect().top <= 60 && s.getBoundingClientRect().bottom > 60)?.id || 'possibility') : Reveal.getCurrentSlide().id;
+    const id = reader ? (mode.dataset.slide || readerSlide()) : Reveal.getCurrentSlide().id;
     location.href = `${location.pathname}?view=${reader ? 'slides' : 'read'}#${reader ? '/' : ''}${id}`;
   });
   if (reader) {
@@ -23,6 +26,7 @@
       center: false, transition: reduced ? 'none' : 'fade', transitionSpeed: 'default',
       backgroundTransition: reduced ? 'none' : 'fade', autoAnimate: !reduced,
       autoSlide: 0, overview: true, help: true, fragments: true, embedded: false,
+      scrollActivationWidth: null,
       disableLayout: false, viewDistance: 3, fragmentInURL: true, autoAnimateDuration: 0.8,
       autoAnimateEasing: 'cubic-bezier(.2,.7,.1,1)', controlsTutorial: false
     })).then(() => syncInert());
