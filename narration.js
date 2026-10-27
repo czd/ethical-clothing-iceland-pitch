@@ -26,7 +26,11 @@
   more.addEventListener('click', () => { const open = more.getAttribute('aria-expanded') !== 'true'; more.setAttribute('aria-expanded', String(open)); options.hidden = !open; });
   document.querySelector('#audio-hide').addEventListener('click', () => { audio.pause(); dock.open = false; dock.querySelector('summary').focus(); });
   for (const event of ['play', 'pause', 'ended', 'timeupdate', 'durationchange', 'loadedmetadata', 'emptied', 'error']) audio.addEventListener(event, update);
-  new MutationObserver(() => { document.querySelector('#compact-status').textContent = status.textContent; }).observe(status, {childList:true});
+  new MutationObserver(() => {
+    const feedback = document.querySelector('#compact-status');
+    feedback.textContent = status.textContent;
+    feedback.classList.toggle('sr-only', !/unavailable|could not start/i.test(status.textContent));
+  }).observe(status, {childList:true});
   let slides = [], current = -1;
   new ResizeObserver(() => {
     document.documentElement.style.setProperty('--narration-height', `${dock.getBoundingClientRect().height}px`);
