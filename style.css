@@ -45,3 +45,13 @@ body.reader .reveal{height:auto;margin-top:54px;overflow:visible}body.reader .re
 body.reader .flip .flip-inner{transform:rotateY(180deg)}
 
 .chart-scale{font-size:15px!important;margin:28px 25px -40px!important}body.reader .chart-scale{font-size:12px!important;margin:25px 0 0!important}body:not(.reader) #delivery .bar-chart{margin-top:58px}
+
+/* Reader view uses document flow so evidence labels never overlap display copy. */
+body.reader .shop-scene{height:auto;min-height:0;display:flex;flex-direction:column;gap:18px;padding:18px 16px 24px;overflow:visible}
+body.reader .rail-label{position:static;line-height:1.5}
+body.reader .rail{position:relative;inset:auto;width:100%;height:170px;flex-shrink:0}
+body.reader .mini-shirt{height:170px;margin-top:-22px}
+body.reader .display-tag{position:relative;inset:auto;width:min(100%,300px);height:auto;min-height:150px;transform:none;align-self:flex-start;padding:14px 16px;box-sizing:border-box}
+body.reader .display-tag .flip-inner{height:auto;min-height:126px}
+body.reader .display-tag b{font-size:21px;line-height:1.15}
+body.reader .display-proof{position:static;inset:auto;width:100%;font-size:24px;line-height:1.45;padding:16px 0 0;margin:0;border-top:1px solid #7d8873}
